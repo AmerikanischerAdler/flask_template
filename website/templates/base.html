@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- replace SiteName with name of project -->
+  <title>{% block page %}{% endblock %} | SiteName</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../static/{% block style %}{% endblock %}.css">
+  <style>
+    /* add universal styles here */
+  </style>
+</head>
+<body>
+  <!-- add content here -->
+  <div id="title">
+    {% block title %}{% endblock %}
+  </div>
+
+  <div>
+    {% block content %}{% endblock %}
+  </div>
+</body>
+</html>
